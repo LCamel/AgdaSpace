@@ -1,0 +1,19 @@
+{
+  "name": "Agda Dev Container",
+  "image": "ghcr.io/lcamel/agda-devcontainer-temp:main",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "banacorn.agda-mode"
+      ],
+      "settings": {
+        // Disable minimap to save screen space.
+        "editor.minimap.enabled": false
+      }
+    }
+  },
+  // Some Haskell code requires locale settings to process non-ASCII characters.
+  "containerEnv": {
+    "LC_ALL": "en_US.UTF-8"
+  }
+}
